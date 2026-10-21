@@ -2,6 +2,10 @@
 
 A complete, playable HTML5 game for two players online, with **no backend, no hosting bill and no matchmaking code**. Rooms, invite links, quick match, turn order and reconnects come from the [klyo games](https://games.klyo.pl/) kit; the game itself is about 150 lines of plain JavaScript.
 
+![Four in a Row running on the klyo kit](docs/screenshot.png)
+
+**Play an online game built with the same kit:** [Hearts on klyo games](https://games.klyo.pl/hearts/) (pick “Play online” and send the link to a friend). **Guide:** [An online multiplayer browser game without your own server](https://games.klyo.pl/online-multiplayer-without-server/).
+
 🌍 Read this in: [Polski](docs/README.pl.md) · [Українська](docs/README.uk.md) · [Deutsch](docs/README.de.md) · [Español](docs/README.es.md) · [Français](docs/README.fr.md) · [Português](docs/README.pt.md) · [Italiano](docs/README.it.md) · [Русский](docs/README.ru.md) · [Türkçe](docs/README.tr.md)
 
 ## Why this exists
