@@ -1,0 +1,13 @@
+/* The board is plain HTML: seven columns of buttons, so it works with touch, mouse and keyboard. */
+.fr-board { position: absolute; inset: 0; display: grid; place-items: center; }
+.fr-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 6px; padding: 10px; border-radius: 18px;
+  background: #1f3a8a; width: min(94vw, 88vh * 7 / 6, 640px); aspect-ratio: 7 / 6; box-shadow: 0 18px 40px #0007; }
+.fr-col { appearance: none; border: 0; padding: 0; background: none; display: grid; grid-template-rows: repeat(6, 1fr); gap: 6px; cursor: pointer; border-radius: 12px; }
+.fr-col:focus-visible { outline: 3px solid #ffd166; outline-offset: 2px; }
+.fr-col:disabled { cursor: default; }
+.fr-cell { border-radius: 50%; background: #0b1530; box-shadow: inset 0 3px 6px #0009; }
+.fr-cell[data-p="0"] { background: radial-gradient(circle at 35% 30%, #ff8a8a, #e11d48); }
+.fr-cell[data-p="1"] { background: radial-gradient(circle at 35% 30%, #ffe08a, #f59e0b); }
+.fr-cell[data-win] { box-shadow: 0 0 0 4px #fff, 0 0 18px #fff; }
+@media (prefers-reduced-motion: no-preference) { .fr-cell[data-p] { animation: fr-drop .25s ease-out; } }
+@keyframes fr-drop { from { transform: translateY(-120%); } }
